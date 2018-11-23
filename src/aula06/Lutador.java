@@ -54,6 +54,20 @@ public void perderLuta(){
 public void empatarLuta (){
     setEmpates (getEmpates() + 1);   
 }
+//Metodo Construtor
+
+    public Lutador(String nome, String nascionalidade, int idade, float altura, float peso, String categoria, int vitorias, int derrotas, int empates) {
+        this.nome = nome;
+        this.nascionalidade = nascionalidade;
+        this.idade = idade;
+        this.altura = altura;
+       this.setPeso(peso);
+        this.categoria = categoria;
+        this.vitorias = vitorias;
+        this.derrotas = derrotas;
+        this.empates = empates;
+    }
+
       
 // Metodos acessores Get e Set
 
@@ -112,8 +126,6 @@ public void empatarLuta (){
     public void setPeso(float peso) {
         this.peso = peso;
        getCategoria ();
-       
-               
       
     }
 
